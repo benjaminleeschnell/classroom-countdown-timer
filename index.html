@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="./img/favicon.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Countdown Timer</title>
+    </head>
+    <body>
+        <div id="header">
+            <img src="./img/southern-logo-on-brand-green-background-horizontal.png">
+            <h1>Classroom Countdown Timer</h1>
+        </div>
+        <div id="box">
+            <!-- <label for="hours">H:</label> -->
+            <input type="number" placeholder="h" id="hours" min="0" placeholder="0">
+            <!-- <label for="minutes">M:</label> -->
+            <input type="number" placeholder="m" id="minutes" min="0" placeholder="0">
+            <!-- <label for="seconds">S:</label> -->
+            <input type="number" placeholder="s" id="seconds" min="0" placeholder="0">
+            <div class="buttonGroup">
+                <button onclick="startTimer()">Start Timer</button>
+                <button id="pauseButton" onclick="pauseTimer()">Pause</button>
+                <button onclick="resetTimer()">Reset</button>
+            </div>
+            <div id="timer" onclick="toggleFullScreen()">00:00:00</div>
+            <script src="./js/main.js"></script>
+        </div>
+    </body>
+    </html>
